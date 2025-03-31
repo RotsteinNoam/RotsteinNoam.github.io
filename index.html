@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Noam Rotstein - PhD Candidate & AI Research Scientist</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* Updated Header Design */
+    header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 30px;
+    }
+    .profile-photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #1a73e8;
+      margin-right: 20px;
+    }
+    .header-info {
+      flex: 1;
+    }
+    .header-info h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #1a73e8;
+    }
+    .header-info p {
+      font-size: 1.2em;
+      color: #555;
+      margin: 8px 0;
+    }
+    .social-icons a {
+      margin-right: 15px;
+      color: #1a73e8;
+      font-size: 1.5em;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #0c47a1;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      color: #1a0dab;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 40px;
+    }
+    /* Publications Layout */
+    .publication {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .publication img {
+      width: 120px;
+      height: auto;
+      margin-right: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+    .pub-details h3 {
+      margin: 0;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+    .pub-details p {
+      margin: 4px 0;
+      color: #555;
+    }
+    .pub-details p.conference {
+      font-style: italic;
+      font-size: 0.95em;
+      color: #333;
+    }
+    .pub-links {
+      margin-top: 5px;
+    }
+    .pub-links a {
+      margin-right: 15px;
+      color: #1a0dab;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+    .pub-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Updated Header -->
+    <header>
+      <img src="noam_cropped.png" alt="Noam Rotstein" class="profile-photo">
+      <div class="header-info">
+        <h1><strong>Noam Rotstein</strong></h1>
+        <p>PhD Candidate in Computer Science at Technion<br>
+        AI Research Scientist at Lumana</p>
+        <div class="social-icons">
+          <!-- Added Gmail icon -->
+          <a href="mailto:rotsteinnoam@gmail.com" target="_blank" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://scholar.google.com/citations?user=sQSHkS4AAAAJ" target="_blank" title="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+          </a>
+          <a href="https://il.linkedin.com/in/noam-rots" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://x.com/NoamRot" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm Noam Rotstein, a PhD candidate at the Technion – Israel Institute of Technology, conducting research under the supervision of Professor Ron Kimmel. My work encompasses various aspects of computer vision, including 3D understanding, multimodal learning, and image editing using generative diffusion models.
+      </p>
+      <p>
+        Alongside my academic pursuits, I serve as an AI Research Scientist at Lumana, where I was among the company’s first employees. In this role, I contribute to the development of next-generation, AI-powered video analytics products.
+      </p>
+    </section>
+    
+    <!-- Publications Section (ordered newest to oldest) -->
+    <section id="research">
+      <h2>Publications</h2>
+
+      <!-- Publication 5: Pathways (2024) -->
+      <div class="publication">
+        <img src="papers/pathways.jpg" alt="Pathways on the Image Manifold">
+        <div class="pub-details">
+          <h3>Pathways on the Image Manifold: Image Editing via Video Generation</h3>
+          <p><strong>Noam Rotstein</strong>, Gal Yona, Daniel Silver, Roy Velich, David Bensaïd, Ron Kimmel</p>
+          <p class="conference"><strong>CVPR 2025</strong></p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2411.16819" target="_blank">Paper</a>
+            <a href="https://rotsteinnoam.github.io/Frame2Frame/" target="_blank">Page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication 2: Paint by Inpaint (2024) -->
+      <div class="publication">
+        <img src="papers/pipe.jpg" alt="Paint by Inpaint">
+        <div class="pub-details">
+          <h3>Paint by Inpaint: Learning to Add Image Objects by Removing Them First</h3>
+          <p>Navve Wasserman* , <strong>Noam Rotstein*</strong>, Roy Ganz, Ron Kimmel</p>
+          <p class="conference"><strong>CVPR 2025</strong></p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2404.18212" target="_blank">Paper</a>
+            <a href="https://rotsteinnoam.github.io/Paint-by-Inpaint/" target="_blank">Page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication 1: Fusecap (2024) -->
+      <div class="publication">
+        <img src="papers/fusecap.jpg" alt="Fusecap">
+        <div class="pub-details">
+          <h3>Fusecap: Leveraging Large Language Models for Enriched Fused Image Captions</h3>
+          <p><strong>Noam Rotstein*</strong>, David Bensaïd*, Shaked Brody, Roy Ganz, Ron Kimmel</p>
+          <p class="conference"><strong>WACV 2024</strong></p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2305.17718" target="_blank">Paper</a>
+            <a href="https://rotsteinnoam.github.io/FuseCap/" target="_blank">Page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication 3: Partial Matching (2023) -->
+      <div class="publication">
+        <img src="papers/partial.jpg" alt="Partial Matching of Nonrigid Shapes">
+        <div class="pub-details">
+          <h3>Partial Matching of Nonrigid Shapes by Learning Piecewise Smooth Functions</h3>
+          <p>Daniel Bensaïd, <strong>Noam Rotstein</strong>, Noam Goldenstein, Ron Kimmel</p>
+          <p class="conference"><strong>SGP 2023</strong></p>
+          <div class="pub-links">
+            <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14913" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication 4: Multimodal Alignment (2022) -->
+      <div class="publication">
+        <img src="papers/multimodal_pc.jpg" alt="Multimodal Colored Point Cloud to Image Alignment">
+        <div class="pub-details">
+          <h3>Multimodal Colored Point Cloud to Image Alignment</h3>
+          <p><strong>Noam Rotstein</strong>, Amit Bracha, Ron Kimmel</p>
+          <p class="conference"><strong>CVPR 2022</strong></p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2110.03249" target="_blank">Paper</a>
+            <a href="https://github.com/RotsteinNoam/Multimodal-Colored-Point-Cloud-to-Image-Alignment" target="_blank">Page</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication 6: Depth Refinement (2021) -->
+      <div class="publication">
+        <img src="papers/depthr.jpg" alt="Depth Refinement for Improved Stereo Reconstruction">
+        <div class="pub-details">
+          <h3>Depth Refinement for Improved Stereo Reconstruction</h3>
+          <p>Amit Bracha, <strong>Noam Rotstein</strong>, Daniel Bensaïd, Ron Slossberg, Ron Kimmel</p>
+          <p class="conference"><strong>arXiv 2021</strong></p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2112.08070" target="_blank">Paper</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Moved Education Section After Publications -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>PhD in Computer Science (Direct track)</strong> – Technion – Israel Institute of Technology (2021–Current)</li>
+        <li>
+          <strong>Bachelor's in Electrical Engineering</strong> – Technion – Israel Institute of Technology<br>
+          - Graduate of the Research-oriented Excellence Program of the EE faculty (EMET)<br>
+          - Summa Cum Laude
+        </li>
+      </ul>
+    </section>
+    
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li>
+          <strong>AI Research Scientist</strong> at Lumana (2022–Present) – Specializing in video anlytics.
+        </li>
+        <li>
+          <strong>Teaching Assistant</strong> at Technion – Assisted in delivering an Introduction to Machine Learning course.
+        </li>
+        <li>
+          <strong>Computer Vision Algorithm Researcher</strong> at Intel Corporation – RealSense 3D capture technology.
+        </li>
+        <li>
+          <strong>Computer Vision Engineer</strong> at Eye-Minders.
+        </li>
+      </ul>
+    </section>
+    
+    <section id="Patents">
+        <h2>Patents</h2>
+        <ul>
+          <li>
+            <strong>Hybrid machine learning architecture for visual content processing and uses thereof</strong><br>
+            Ofir Mulla, <strong>Noam Rotstein</strong>, Amit Bracha, Ron Kimmel, Aviad Zabatani, Ron Slossberg, Sagi Ben Moshe<br>
+            US Patent App. 18/145,301, 2024
+          </li>
+          <li>
+            <strong>Custom object tracking using hybrid machine learning</strong><br>
+            Ofir Mulla, <strong>Noam Rotstein</strong>, Amit Bracha, Ron Kimmel, Aviad Zabatani, Ron Slossberg, Sagi Ben Moshe<br>
+            US Patent App. 18/186,517, 2024
+          </li>
+        </ul>
+      </section>
+      
+      
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        For inquiries or collaboration, please email me at: <a href="mailto:rotsteinnoam@gmail.com">rotsteinnoam@gmail.com</a>
+      </p>
+    </section>
+    
+    <footer class="footer">
+      <p>&copy; 2025 Noam Rotstein. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
