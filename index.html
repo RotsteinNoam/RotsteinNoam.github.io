@@ -9,6 +9,7 @@
         })(window,document,'script','dataLayer','GTM-57N34TLM');</script>
         <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Noam Rotstein - Senior Research Scientist at NVIDIA</title>
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -21,10 +22,11 @@
       color: #333;
     }
     .container {
-      max-width: 900px;
+      max-width: 980px;
+      box-sizing: border-box;
       margin: 20px auto;
       background: #fff;
-      padding: 20px 40px;
+      padding: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     /* Updated Header Design */
@@ -188,6 +190,24 @@
     .pub-links a:hover {
       text-decoration: underline;
     }
+
+    .pub-details { min-width: 0; }
+    .publication img { flex-shrink: 0; }
+    .publication-media { flex: 0 0 120px; margin-right: 20px; }
+    .publication-media video {
+      display: block; width: 120px; height: auto;
+      border: 1px solid #ddd; border-radius: 4px;
+    }
+    @media (max-width: 600px) {
+      .container { margin: 0; padding: 20px 12px; }
+      header { flex-direction: column; text-align: center; }
+      .profile-photo { margin: 0 0 15px; }
+      .header-info h1 { font-size: 2em; }
+      .publication { flex-direction: column; gap: 12px; }
+      .publication img { margin-right: 0; }
+      .publication-media { flex-basis: auto; margin-right: 0; }
+      .publication-media video { width: 240px; max-width: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -233,6 +253,25 @@
       <p style="font-size:0.9em; color:#555; margin-top:-10px; margin-bottom:20px;">
         <em>* indicates equal contribution</em>
       </p>
+
+      <!-- Joints, Camera, Action! -->
+      <div class="publication" id="jca">
+        <div class="publication-media">
+          <video id="jca-teaser" width="480" height="270" autoplay muted loop playsinline preload="metadata" poster="papers/jca-poster.jpg" aria-label="Generated video and 3D motion of an ape jumping over a bar">
+            <source src="papers/jca-teaser.mp4" type="video/mp4">
+            <a href="papers/jca-teaser.mp4">Watch the JCA demo</a>
+          </video>
+        </div>
+        <div class="pub-details">
+          <h3>Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs</h3>
+          <p><strong><a class="person-link" href="https://rotsteinnoam.github.io/" target="_blank" rel="noopener noreferrer">Noam Rotstein</a></strong>, <a class="person-link" href="https://yoadtew.github.io/" target="_blank" rel="noopener noreferrer">Yoad Tewel</a>, <a class="person-link" href="https://research.nvidia.com/person/chen-tessler" target="_blank" rel="noopener noreferrer">Chen Tessler</a>, <a class="person-link" href="https://haggaim.github.io/" target="_blank" rel="noopener noreferrer">Haggai Maron</a>, <a class="person-link" href="https://research.nvidia.com/person/gal-chechik/" target="_blank" rel="noopener noreferrer">Gal Chechik</a>, <a class="person-link" href="https://orlitany.github.io/" target="_blank" rel="noopener noreferrer">Or Litany</a>, <a class="person-link" href="https://ykasten.github.io/" target="_blank" rel="noopener noreferrer">Yoni Kasten</a>, <a class="person-link" href="https://research.nvidia.com/person/yuval-atzmon/" target="_blank" rel="noopener noreferrer">Yuval&nbsp;Atzmon</a></p>
+          <p class="conference"><strong>Preprint 2026</strong></p>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2610.28632" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a href="https://research.nvidia.com/labs/par/projects/jca/" target="_blank" rel="noopener noreferrer">Page</a>
+          </div>
+        </div>
+      </div>
 
      <!-- Publication 8: CaricatureGS (2025) -->
       <div class="publication">
